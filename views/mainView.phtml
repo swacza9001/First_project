@@ -48,10 +48,10 @@
                 </tr>
                 <?php foreach ($allInsured as $insured): ?>
                     <tr>
-                        <td><?php echo $insured['name'] ?></td>
-                        <td><?php echo $insured['surname'] ?></td>
-                        <td><?php echo $insured['age'] ?></td>
-                        <td><?php echo $insured['phone_number'] ?></td>
+                        <td><?php echo htmlspecialchars($insured['name']) ?></td>
+                        <td><?php echo htmlspecialchars($insured['surname']) ?></td>
+                        <td><?php echo htmlspecialchars($insured['age']) ?></td>
+                        <td><?php echo htmlspecialchars($insured['phone_number']) ?></td>
                     </tr>
                 <?php endforeach; ?>
             </table>
