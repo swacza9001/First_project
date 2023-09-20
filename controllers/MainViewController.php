@@ -17,7 +17,7 @@ class MainViewController
             } else {
                 MessageHandler::addNegativeMessage("Nepodařilo se přidat pojištěnce.");
             }
-            // Přesměrování uživatele
+            // Redirecting user
             header("Location: index.php"); 
             exit;
         }
